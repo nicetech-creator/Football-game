@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<title>Football</title>
+
+</head>
+<script src="https://connect.facebook.net/en_US/all.js"></script>
+<script src="js/lib/easeljs-NEXT.combined.js"></script>
+<script src="js/lib/howler.min.js"></script>
+ <script src="js/lib/tweenjs-NEXT.min.js"></script>
+   
+       <script src="js/lib/preloadjs-NEXT.min.js"></script>
+       
+        <script src="js/Mainb.js"></script>
+<style>
+@font-face {font-family: "Kenyanbd";
+src:url("fonts/kenyan_coffee_bd.ttf") format("truetype")
+}
+@font-face {font-family: "Kenyanrg";
+src:url("fonts/kenyan_coffee_rg.ttf") format("truetype")
+}
+@font-face {font-family: "Futura";
+src:url("fonts/FuturaStd-ExtraBoldOblique.otf") format("opentype")
+}
+*{
+  margin: 0;
+  padding: 0;
+  border:0;
+}
+#aframe{
+		position:absolute;
+		top:130px;
+		left:10px;
+		display:none;
+	
+	}
+	#mainb{
+		max-width:892px;
+		margin:0px auto;
+		padding:0px;
+		display:block;
+		width:100%;
+		
+		
+	}
+	#gamew{
+		-webkit-tap-highlight-color: transparent;		
+		background-color:#33affa;
+		width:100%;
+		max-width:892px;
+		
+		display:block;
+		margin:0px auto;
+	}	
+	.no-touch-action {
+		touch-action: none!important;
+		-webkit-tap-highlight-color: transparent;	
+	}
+	#NoTouchMoveDiv {
+		padding:0px;margin:0px;
+		height:2px;
+		display:block;
+	}	
+</style>
+<body>
+<iframe id="aframe" src="" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+<div id ="mainb">
+<canvas id="gamew" width="892" height="900"></canvas>
+</div><div class="no-touch-action" id="NoTouchMoveDiv"></div>
+
+</body>
+</html>
